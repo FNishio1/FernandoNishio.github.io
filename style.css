@@ -1,82 +1,342 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#0f172a;
-    color:white;
+    font-family:'Poppins', sans-serif;
+    background:#07111f;
+    color:#f8fafc;
+    overflow-x:hidden;
 }
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
 
 .hero{
     height:100vh;
-    background:url('assets/background.jpg')
-    center/cover;
+
+    background:
+    linear-gradient(
+        rgba(4,12,22,0.72),
+        rgba(4,12,22,0.82)
+    ),
+    url('assets/background.jpg');
+
+    background-size:cover;
+    background-position:center;
+
     position:relative;
 
     display:flex;
     justify-content:center;
     align-items:center;
+
     text-align:center;
 }
 
-.overlay{
-    position:absolute;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.55);
-}
+/* =========================
+   HERO CONTENT
+========================= */
 
 .hero-content{
     position:relative;
     z-index:2;
-    max-width:800px;
+
+    max-width:900px;
     padding:20px;
+
+    animation:fadeUp 1.2s ease;
 }
 
 .hero h1{
-    font-size:5rem;
+    font-size:5.5rem;
+    font-weight:700;
+
     margin-bottom:20px;
+
+    letter-spacing:-2px;
+
+    line-height:1.1;
 }
 
 .hero h2{
-    font-size:1.8rem;
-    margin-bottom:20px;
+    font-size:1.5rem;
+    font-weight:400;
+
     color:#cbd5e1;
+
+    margin-bottom:30px;
+
+    letter-spacing:1px;
 }
 
 .hero p{
     font-size:1.2rem;
-    line-height:1.7;
-    margin-bottom:30px;
+
+    color:#dbe4ee;
+
+    line-height:1.9;
+
+    max-width:750px;
+
+    margin:auto;
+    margin-bottom:40px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 .btn{
     display:inline-block;
-    padding:15px 30px;
+
+    padding:16px 34px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:0.3s ease;
+
+    letter-spacing:0.5px;
+}
+
+/* PRIMARY BUTTON */
+
+.btn{
     background:#16a34a;
     color:white;
-    text-decoration:none;
-    border-radius:8px;
+
+    box-shadow:0 10px 25px rgba(22,163,74,0.3);
 }
 
-#about{
-    padding:100px 20px;
+.btn:hover{
+    transform:translateY(-3px);
+
+    background:#15803d;
+
+    box-shadow:0 14px 30px rgba(22,163,74,0.45);
 }
 
-.container{
-    max-width:1000px;
-    margin:auto;
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+    padding:120px 0;
 }
 
-#about h2{
+section:nth-child(even){
+    background:#0b1727;
+}
+
+section h2{
     font-size:3rem;
+
     margin-bottom:30px;
+
+    position:relative;
+
+    display:inline-block;
 }
 
-#about p{
-    font-size:1.2rem;
+/* UNDERLINE EFFECT */
+
+section h2::after{
+    content:'';
+
+    width:60%;
+
+    height:4px;
+
+    background:#16a34a;
+
+    position:absolute;
+
+    left:0;
+    bottom:-10px;
+
+    border-radius:10px;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+section p{
+    font-size:1.15rem;
+
+    line-height:2;
+
+    color:#cbd5e1;
+
+    max-width:900px;
+}
+
+/* =========================
+   RESEARCH / PROJECT CARDS
+========================= */
+
+.card-grid{
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+}
+
+.card{
+    background:#122033;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    transition:0.35s ease;
+
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+
+    background:#16263b;
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
+}
+
+.card h3{
+    margin-bottom:15px;
+
+    font-size:1.4rem;
+
+    color:#f8fafc;
+}
+
+.card p{
+    color:#cbd5e1;
+
     line-height:1.8;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin-bottom:15px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    padding:40px 20px;
+
+    background:#040b14;
+
+    text-align:center;
+
+    color:#94a3b8;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:900px){
+
+    .hero h1{
+        font-size:4rem;
+    }
+
+    .hero h2{
+        font-size:1.2rem;
+    }
+
+    section h2{
+        font-size:2.3rem;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero{
+        padding:40px 20px;
+    }
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .hero h2{
+        font-size:1rem;
+        line-height:1.7;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    section{
+        padding:80px 0;
+    }
+
 }
