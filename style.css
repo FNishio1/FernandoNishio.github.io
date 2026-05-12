@@ -59,6 +59,17 @@ body{
 }
 
 /* =========================================
+   TEXT SELECTION
+========================================= */
+
+::selection{
+
+    background:var(--accent);
+
+    color:white;
+}
+
+/* =========================================
    GLOBAL CONTAINER
 ========================================= */
 
@@ -81,29 +92,36 @@ body{
 
     background:
     linear-gradient(
-        rgba(2,10,20,0.70),
+        rgba(2,10,20,0.60),
         rgba(2,10,20,0.88)
     ),
-    url('assets/FNishio enhance Frog manu.png
-');
+    url('assets/frog-manu.jpg');
 
     background-size:cover;
+
     background-position:center;
+
+    background-repeat:no-repeat;
+
     background-attachment:fixed;
 
     position:relative;
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
     text-align:center;
 
     padding:40px 20px;
+
+    overflow:hidden;
 }
 
 /* =========================================
-   OPTIONAL OVERLAY
+   OVERLAY
 ========================================= */
 
 .overlay{
@@ -113,7 +131,7 @@ body{
     inset:0;
 
     background:
-    rgba(0,0,0,0.25);
+    rgba(0,0,0,0.20);
 }
 
 /* =========================================
@@ -127,6 +145,21 @@ body{
     z-index:2;
 
     max-width:900px;
+
+    padding:50px;
+
+    border-radius:28px;
+
+    background:
+    rgba(255,255,255,0.04);
+
+    backdrop-filter:blur(10px);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,0.35);
 
     animation:fadeUp 1.2s ease;
 }
@@ -200,6 +233,7 @@ body{
     display:inline-flex;
 
     align-items:center;
+
     justify-content:center;
 
     padding:16px 34px;
@@ -229,12 +263,13 @@ body{
 .btn:hover{
 
     transform:
-    translateY(-4px);
+    translateY(-4px)
+    scale(1.02);
 
     background:var(--accent-hover);
 
     box-shadow:
-    0 18px 35px rgba(22,163,74,0.40);
+    0 20px 40px rgba(22,163,74,0.40);
 }
 
 /* =========================================
@@ -277,9 +312,9 @@ body{
 
 .profile-image{
 
-    width:260px;
+    width:280px;
 
-    height:260px;
+    height:280px;
 
     object-fit:cover;
 
@@ -288,7 +323,7 @@ body{
     border:5px solid var(--accent);
 
     box-shadow:
-    0 15px 40px rgba(0,0,0,0.45);
+    0 20px 50px rgba(0,0,0,0.45);
 
     transition:0.4s ease;
 }
@@ -296,7 +331,8 @@ body{
 .profile-image:hover{
 
     transform:
-    scale(1.04);
+    scale(1.05)
+    rotate(1deg);
 }
 
 /* =========================================
@@ -306,6 +342,10 @@ body{
 section{
 
     padding:120px 0;
+
+    position:relative;
+
+    overflow:hidden;
 }
 
 section:nth-child(even){
@@ -337,6 +377,7 @@ section h2::after{
     position:absolute;
 
     left:0;
+
     bottom:-12px;
 
     width:65%;
@@ -385,6 +426,8 @@ section p{
 
 .card{
 
+    position:relative;
+
     background:var(--bg-card);
 
     border-radius:22px;
@@ -399,9 +442,11 @@ section p{
 .card:hover{
 
     transform:
-    translateY(-10px);
+    translateY(-12px)
+    scale(1.01);
 
-    box-shadow:var(--shadow);
+    box-shadow:
+    0 30px 60px rgba(0,0,0,0.40);
 
     background:#16263b;
 }
@@ -429,10 +474,45 @@ section p{
 }
 
 /* =========================================
+   CARD OVERLAY EFFECT
+========================================= */
+
+.card::before{
+
+    content:'';
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0.35),
+        transparent
+    );
+
+    opacity:0;
+
+    transition:0.4s ease;
+
+    z-index:1;
+}
+
+.card:hover::before{
+
+    opacity:1;
+}
+
+/* =========================================
    CARD CONTENT
 ========================================= */
 
 .card-content{
+
+    position:relative;
+
+    z-index:2;
 
     padding:30px;
 }
@@ -509,12 +589,16 @@ footer{
 @keyframes fadeUp{
 
     from{
+
         opacity:0;
+
         transform:translateY(35px);
     }
 
     to{
+
         opacity:1;
+
         transform:translateY(0);
     }
 }
@@ -524,19 +608,24 @@ footer{
 ========================================= */
 
 ::-webkit-scrollbar{
+
     width:10px;
 }
 
 ::-webkit-scrollbar-track{
+
     background:var(--bg-primary);
 }
 
 ::-webkit-scrollbar-thumb{
+
     background:#1e293b;
+
     border-radius:20px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
+
     background:var(--accent);
 }
 
@@ -547,14 +636,17 @@ footer{
 @media(max-width:992px){
 
     .hero h1{
+
         font-size:4.5rem;
     }
 
     .hero h2{
+
         font-size:1.1rem;
     }
 
     section h2{
+
         font-size:2.5rem;
     }
 
@@ -569,7 +661,6 @@ footer{
 
         margin:auto;
     }
-
 }
 
 @media(max-width:768px){
@@ -579,7 +670,13 @@ footer{
         background-attachment:scroll;
     }
 
+    .hero-content{
+
+        padding:35px 25px;
+    }
+
     .hero h1{
+
         font-size:3.5rem;
     }
 
@@ -591,6 +688,7 @@ footer{
     }
 
     .hero p{
+
         font-size:1rem;
     }
 
@@ -602,6 +700,7 @@ footer{
     }
 
     section{
+
         padding:90px 0;
     }
 
@@ -609,12 +708,12 @@ footer{
 
         height:300px;
     }
-
 }
 
 @media(max-width:480px){
 
     .hero h1{
+
         font-size:2.8rem;
     }
 
@@ -624,6 +723,7 @@ footer{
     }
 
     .btn{
+
         width:100%;
     }
 
@@ -632,4 +732,8 @@ footer{
         grid-template-columns:1fr;
     }
 
+    .hero-content{
+
+        padding:30px 20px;
+    }
 }
