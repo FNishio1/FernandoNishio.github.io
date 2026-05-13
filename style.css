@@ -95,7 +95,7 @@ body{
         rgba(2,10,20,0.60),
         rgba(2,10,20,0.88)
     ),
-    url('assets/Cormoranes FNishio.jpg'); 
+    url('assets/Cormoranes FNishio.jpg');
 
     background-size:cover;
 
@@ -537,9 +537,18 @@ section p{
    CONTACT SECTION
 ========================================= */
 
-##contact p{
+#contact{
 
     text-align:center;
+}
+
+/* CENTRAR EMAIL Y UBICACIÓN */
+
+#contact p{
+
+    text-align:center;
+
+    margin-bottom:15px;
 }
 
 #contact a{
