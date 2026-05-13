@@ -538,7 +538,9 @@ section p{
 ========================================= */
 
 #contact{
-
+   
+    margin-bottom:20px;
+   
     text-align:center;
 }
 
@@ -558,7 +560,7 @@ section p{
 
     border-radius:24px;
 
-    margin:50px auto 40px auto;
+    margin:50px auto 80px auto;
 
     display:block;
 
