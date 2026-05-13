@@ -537,9 +537,22 @@ section p{
    CONTACT SECTION
 ========================================= */
 
-#contact{
-   
+##contact p{
+
     text-align:center;
+}
+
+#contact a{
+
+    display:inline-block;
+
+    text-align:center;
+
+    color:var(--accent);
+
+    text-decoration:none;
+
+    font-weight:600;
 }
 
 /* =========================================
