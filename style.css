@@ -217,17 +217,6 @@ body{
    BUTTONS
 ========================================= */
 
-.buttons{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-}
-
 .btn{
 
     display:inline-flex;
@@ -236,58 +225,65 @@ body{
 
     justify-content:center;
 
-    padding:16px 34px;
+    min-width:220px;
+
+    padding:18px 38px;
 
     border-radius:14px;
 
     background:var(--accent);
 
-    color:white;
+    color:#ffffff;
 
     text-decoration:none;
 
-    font-weight:600;
+    font-size:1rem;
+
+    font-weight:700;
 
     letter-spacing:0.5px;
 
-    transition:var(--transition);
+    transition:all 0.35s ease;
 
     border:none;
 
     cursor:pointer;
 
     box-shadow:
-    0 10px 25px rgba(22,163,74,0.30);
+    0 12px 30px rgba(22,163,74,0.35);
+
+    position:relative;
+
+    z-index:5;
 }
 
 .btn:hover{
 
     transform:
-    translateY(-4px)
-    scale(1.02);
+    translateY(-4px);
 
-    background:var(--accent-hover);
+    background:#22c55e;
 
     box-shadow:
-    0 20px 40px rgba(22,163,74,0.40);
+    0 20px 40px rgba(34,197,94,0.40);
 }
 
-/* =========================================
-   OUTLINE BUTTON
-========================================= */
+/* OUTLINE BUTTON FIX */
 
 .btn-outline{
 
     background:transparent;
 
-    border:
-    2px solid rgba(255,255,255,0.15);
+    color:white;
+
+    border:2px solid rgba(255,255,255,0.25);
 }
 
 .btn-outline:hover{
 
-    background:
-    rgba(255,255,255,0.08);
+    background:rgba(255,255,255,0.08);
+
+    border-color:rgba(255,255,255,0.45);
 }
 
 /* =========================================
