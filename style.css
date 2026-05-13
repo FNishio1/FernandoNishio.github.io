@@ -542,26 +542,50 @@ section p{
     text-align:center;
 }
 
-/* CENTRAR EMAIL Y UBICACIÓN */
+/* CONTACT DETAILS */
 
-#contact p{
+.contact-details{
 
-    text-align:center;
+    display:flex;
 
-    margin-bottom:15px;
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-top:20px;
 }
 
-#contact a{
+.contact-details p{
 
-    display:inline-block;
+    color:var(--text-secondary);
 
-    text-align:center;
+    font-size:1.1rem;
+
+    margin:0;
+}
+
+.contact-details a{
 
     color:var(--accent);
 
     text-decoration:none;
 
+    font-size:1.15rem;
+
     font-weight:600;
+
+    transition:0.3s ease;
+}
+
+.contact-details a:hover{
+
+    color:#22c55e;
+
+    transform:translateY(-2px);
 }
 
 /* =========================================
