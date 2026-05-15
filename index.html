@@ -1,124 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fernando Nishio | Field Biologist</title>
-
   <link rel="stylesheet" href="styles.css" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
 
 <!-- HERO -->
 <header class="hero">
   <div class="overlay"></div>
-
-  <img src="assets/profile1.jpg" class="hero-image" alt="Fernando Nishio">
-
+  <img src="assets/Profile 1.jpg" class="hero-image" alt="Fernando Nishio in the field">
   <div class="hero-content">
     <h1>Fernando Nishio</h1>
-
-    <p class="subtitle">
-      Field Biologist • Environmental Operations • Conservation Projects
-    </p>
-
+    <p class="subtitle">Field Biologist &bull; Environmental Operations &bull; Conservation Projects</p>
     <p class="hero-text">
-      Wildlife research, conservation, water sustainability, and environmental project management across
-      Latin America.
+      Wildlife research, conservation, water sustainability, and environmental project management across Latin America.
     </p>
+    <a href="#about" class="hero-btn">Learn more</a>
   </div>
 </header>
 
+<!-- NAV -->
+<nav class="sticky-nav">
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <!-- ABOUT -->
-<section class="about">
+<section class="about" id="about">
   <div class="container">
-
     <h2>About</h2>
-
     <p>
       Biologist and environmental operations specialist with more than 15 years of experience in wildlife
       research, conservation projects, research station management, and multidisciplinary environmental
       programs. Experienced in field logistics, stakeholder coordination, and applied conservation work
       across coastal, Amazonian, and urban ecosystems.
     </p>
-
+    <p style="margin-top: 1rem;">
+      Currently transitioning into environmental entrepreneurship — applying scientific rigor and field
+      experience to build practical solutions at the intersection of conservation and impact.
+    </p>
+    <a href="assets/Fernando Nishio 2026 L.pdf" download class="cv-btn">
+      <i class="fas fa-file-pdf"></i> Download CV
+    </a>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section class="projects">
-
+<section class="projects" id="projects">
   <div class="container">
-
     <h2>Field Projects</h2>
-
     <div class="grid">
 
-      <!-- PROJECT 1 -->
       <div class="card">
-        <img src="assets/lobito-marcado.jpg" alt="">
-        <img src="assets/pelicano-muestra.jpg" alt="">
-
-        <h3>Coastal Wildlife Monitoring</h3>
-
-        <p>
-          Long-term ecological monitoring of marine mammals, seabirds and coastal ecosystems,
-          including capture, sampling, tagging and population tracking in protected areas.
-        </p>
+        <div class="card-img-wrap">
+          <img src="assets/Lobito marcado Archivo.jpg" alt="Tagged marine mammal on Peruvian coast">
+        </div>
+        <div class="card-body">
+          <h3>Coastal Wildlife Monitoring</h3>
+          <p>Long-term ecological monitoring of marine mammals, seabirds, and coastal ecosystems —
+          including capture, sampling, tagging, and population tracking in protected areas.</p>
+        </div>
       </div>
 
-      <!-- PROJECT 2 -->
       <div class="card">
-        <img src="assets/frog-manu.jpg" alt="">
-        <img src="assets/inia-captura.jpg" alt="">
-
-        <h3>Amazon Research Operations</h3>
-
-        <p>
-          Field research in Tambopata, Manu and Los Amigos conservation areas, focusing on wildlife
-          ecology, species monitoring and multidisciplinary biodiversity studies in tropical forests.
-        </p>
+        <div class="card-img-wrap">
+          <img src="assets/FNishio enhance Frog manu.jpg" alt="Frog species in Manu National Park">
+        </div>
+        <div class="card-body">
+          <h3>Amazon Research Operations</h3>
+          <p>Field research in Tambopata, Manu, and Los Amigos conservation areas, focusing on wildlife
+          ecology, species monitoring, and biodiversity studies in tropical forests.</p>
+        </div>
       </div>
 
-      <!-- PROJECT 3 -->
       <div class="card">
-        <img src="assets/coba.jpg" alt="">
-        <img src="assets/profile2.jpg" alt="">
+        <div class="card-img-wrap">
+          <img src="assets/coba and me.jpg" alt="With Coba at research station">
+        </div>
+        <div class="card-body">
+          <h3>Research Station Management</h3>
+          <p>Management of a university research center across multiple field sites, coordinating
+          researchers, logistics, international volunteers, and institutional stakeholders.</p>
+        </div>
+      </div>
 
-        <h3>Research Station Management</h3>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="assets/Inia Captura FNishio.jpg" alt="Amazon river dolphin capture for research">
+        </div>
+        <div class="card-body">
+          <h3>River Dolphin Research</h3>
+          <p>Capture and health assessment of Amazon river dolphins (Inia geoffrensis) for
+          population studies and conservation monitoring in Peruvian river systems.</p>
+        </div>
+      </div>
 
-        <p>
-          Management of a university research center operating across multiple field sites,
-          coordinating researchers, logistics, international volunteers and institutional stakeholders.
-        </p>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="assets/Talleres en las lomas FNishio.jpg" alt="Community workshops in lomas ecosystems">
+        </div>
+        <div class="card-body">
+          <h3>Community Conservation Workshops</h3>
+          <p>Environmental education and stakeholder engagement in lomas (fog oasis) ecosystems,
+          bridging local communities and conservation institutions.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="assets/Construyendo puentes FNISHIO.jpg" alt="Building bridges between science and community">
+        </div>
+        <div class="card-body">
+          <h3>Science &amp; Society Outreach</h3>
+          <p>Designing and leading programs that connect scientific research with community action,
+          policy stakeholders, and international conservation networks.</p>
+        </div>
       </div>
 
     </div>
+  </div>
+</section>
 
+<!-- SKILLS -->
+<section class="skills-section" id="skills">
+  <div class="container">
+    <h2>What I Bring</h2>
+    <div class="skills-grid">
+      <div class="skill-pill"><i class="fas fa-paw"></i> Wildlife Field Research</div>
+      <div class="skill-pill"><i class="fas fa-water"></i> Water &amp; Coastal Ecosystems</div>
+      <div class="skill-pill"><i class="fas fa-tree"></i> Tropical Biodiversity</div>
+      <div class="skill-pill"><i class="fas fa-project-diagram"></i> Project Management</div>
+      <div class="skill-pill"><i class="fas fa-users"></i> Stakeholder Coordination</div>
+      <div class="skill-pill"><i class="fas fa-flask"></i> Environmental Monitoring</div>
+      <div class="skill-pill"><i class="fas fa-chart-line"></i> Data Analysis</div>
+      <div class="skill-pill"><i class="fas fa-lightbulb"></i> Conservation Innovation</div>
+    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<footer>
-  <h2>Contact</h2>
+<footer id="contact">
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <p class="footer-sub">Open to collaborations, consulting, and new ventures.</p>
 
-  <div class="icons">
-    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://wa.me/51999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <a href="mailto:yourmail@gmail.com"><i class="fas fa-envelope"></i></a>
+    <div class="contact-buttons">
+
+      <a href="https://www.linkedin.com/in/fnishio" target="_blank" class="contact-btn linkedin">
+        <i class="fab fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+
+      <a href="https://wa.me/52999156493" target="_blank" class="contact-btn whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+
+      <a href="https://mail.google.com/mail/?view=cm&to=FNishio@gmail.com&su=Hello%20Fernando" target="_blank" class="contact-btn gmail">
+        <i class="fas fa-envelope"></i>
+        <span>Gmail</span>
+      </a>
+
+    </div>
+
+    <p class="footer-location"><i class="fas fa-map-marker-alt"></i> Lima, Peru</p>
+    <p class="footer-copy">&copy; 2026 Fernando Nishio</p>
   </div>
-
-  <p>Lima, Peru</p>
 </footer>
 
 </body>
