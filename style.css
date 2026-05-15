@@ -362,6 +362,18 @@ footer h2 {
   font-size: 0.8rem;
 }
 
+.footer-contact-info {
+  margin-bottom: 20px;
+  color: #aaa;
+  font-size: 0.95rem;
+  line-height: 2;
+}
+
+.footer-contact-info i {
+  color: #6aaf88;
+  margin-right: 8px;
+}
+
 /* === RESPONSIVE === */
 @media (max-width: 600px) {
   .sticky-nav {
