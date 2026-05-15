@@ -379,13 +379,18 @@ footer h2 {
   .sticky-nav {
     gap: 18px;
   }
-
   .grid {
     grid-template-columns: 1fr;
   }
-
   .contact-buttons {
     flex-direction: column;
     align-items: center;
+  }
+  .about-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    text-align: center;
   }
 }
