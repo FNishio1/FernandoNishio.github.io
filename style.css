@@ -779,3 +779,36 @@ footer{
         padding:30px 20px;
     }
 }
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social-icons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:22px;
+
+    margin-top:25px;
+}
+
+.social-icons a{
+
+    color:var(--text-secondary);
+
+    font-size:1.6rem;
+
+    transition:0.3s ease;
+}
+
+.social-icons a:hover{
+
+    color:var(--accent);
+
+    transform:translateY(-3px);
+}
