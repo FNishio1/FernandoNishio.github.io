@@ -395,7 +395,7 @@ footer h2 {
     text-align: center;
   }
 
-  /* === LANGUAGE BUTTON === */
+/* === LANGUAGE BUTTON === */
 .lang-btn {
   background: #6aaf88;
   color: #0e1110 !important;
@@ -404,7 +404,7 @@ footer h2 {
   min-width: 36px;
   min-height: 36px;
   border-radius: 50%;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 0.5px;
   display: inline-flex;
@@ -418,3 +418,4 @@ footer h2 {
 .lang-btn:hover {
   background: #7fc99f;
 }
+  
