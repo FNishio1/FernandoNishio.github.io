@@ -118,7 +118,8 @@ body {
 }
 
 .sticky-nav a.lang-btn {
-  color: #0e1110;
+  color: #0e1110 !important;
+  background: #6aaf88 !important;
 }
 
 .sticky-nav a.lang-btn:hover {
