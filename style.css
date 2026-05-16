@@ -393,18 +393,27 @@ footer h2 {
   .about-text {
     text-align: center;
   }
-/* === LANGUAGE BUTTON === */
+
+  /* === LANGUAGE BUTTON === */
 .lang-btn {
   background: #6aaf88;
   color: #0e1110 !important;
-  padding: 4px 12px;
-  border-radius: 50px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
   font-weight: 500;
   font-size: 0.8rem;
   letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition: background 0.2s;
 }
 
+.lang-btn:hover {
+  background: #7fc99f;
+}
+  
 .lang-btn:hover {
   background: #7fc99f;
 }
