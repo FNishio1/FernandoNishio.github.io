@@ -117,6 +117,18 @@ body {
   color: #fff;
 }
 
+.sticky-nav a.lang-btn {
+  color: #0e1110;
+}
+
+.sticky-nav a.lang-btn:hover {
+  color: #0e1110;
+}
+
+.sticky-nav a:hover {
+  color: #fff;
+}
+
 /* === ABOUT === */
 .about {
   padding: 90px 20px;
