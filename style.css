@@ -126,8 +126,28 @@ body {
   color: #0e1110;
 }
 
-.sticky-nav a:hover {
-  color: #fff;
+/* === LANGUAGE BUTTON === */
+.lang-btn {
+  background: #6aaf88;
+  color: #0e1110 !important;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.lang-btn:hover {
+  background: #7fc99f;
 }
 
 /* === ABOUT === */
@@ -171,7 +191,6 @@ body {
   color: #ccc;
   font-size: 1.05rem;
 }
-
 
 .cv-btn {
   display: inline-flex;
@@ -241,6 +260,14 @@ body {
 
 .card:hover .card-img-wrap img {
   transform: scale(1.04);
+}
+
+/* === VIDEO EN TARJETA === */
+.project-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .card-body {
@@ -316,7 +343,6 @@ footer h2 {
   margin-bottom: 36px;
 }
 
-/* Contact buttons */
 .contact-buttons {
   display: flex;
   justify-content: center;
@@ -407,34 +433,4 @@ footer h2 {
   .about-text {
     text-align: center;
   }
-
-/* === LANGUAGE BUTTON === */
-.lang-btn {
-  background: #6aaf88;
-  color: #0e1110 !important;
-  width: 36px;
-  height: 36px;
-  min-width: 36px;
-  min-height: 36px;
-  border-radius: 50%;
-  font-weight: 700;
-  font-size: 0.8rem;
-  letter-spacing: 0.5px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s;
-  text-decoration: none;
-  line-height: 1;
-}
-
-.lang-btn:hover {
-  background: #7fc99f;
-}
-  
-.project-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
 }
